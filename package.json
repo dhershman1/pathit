@@ -1,0 +1,17 @@
+{
+  "name": "pathit",
+  "version": "1.0.0",
+  "description": "quickly builds file tree based of string path",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "folder",
+    "create",
+    "builder",
+    "path"
+  ],
+  "author": "Killparadise",
+  "license": "ISC"
+}
