@@ -49,7 +49,7 @@ describe('Creating a file based on string', function() {
 
 describe('Handling multiple paths in an array', function() {
 	it('Should create multiple paths', function(done) {
-		pathit(['./tests/multi_path_test', './tests/multi_path_test/path_1', './tests/multi_path_test/path_2', './tests/multi_path_test/path_3'])
+		pathit(['./tests/multi_path_test', './tests/multi_path_test/path_1', './tests/multi_path_test/path_2'])
 			.then(function() {
 				fs.readdir('./tests/testpath', (err, files) => {
 					if (err) done(err);
