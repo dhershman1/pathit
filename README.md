@@ -11,6 +11,7 @@ npm i pathit
 ```
 
 Run pathit tests using npm test this also allows you to see it in action as it will generate a test folder structure.
+Make sure you either do an npm i inside pathit or install mocha and chai before hand since the tests require these modules.
 ```
 npm test
 ```
