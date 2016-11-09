@@ -1,10 +1,10 @@
 {
   "name": "pathit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "quickly builds file tree based of string path",
   "main": "lib/index.js",
   "scripts": {
-    "pretest": "rimraf tests/testpath",
+    "pretest": "rimraf tests/testpath & rimraf tests/multi_path_test",
     "test": "mocha tests/tests.js"
   },
   "keywords": [
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://bitbucket.org/dhershman/pathit"
   },
-  "homepage": "http://echotechstudio.com",
+  "homepage": "https://bitbucket.org/dhershman/pathit",
   "author": "Dustin Hershman <dustinh17@gmail.com>",
   "license": "ISC",
   "devDependencies": {
