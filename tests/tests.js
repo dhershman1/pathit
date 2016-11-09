@@ -56,6 +56,8 @@ describe('Handling multiple paths in an array', function() {
 					expect(files).to.be.ok;
 					done();
 				});
+			}).catch(function(err) {
+				console.log(err);
 			});
 	});
 });
