@@ -4,7 +4,8 @@
   "description": "quickly builds file tree based of string path",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "rimraf tests/testpath",
+    "test": "mocha tests/tests.js"
   },
   "keywords": [
     "folder",
@@ -12,6 +13,16 @@
     "builder",
     "path"
   ],
-  "author": "Killparadise",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/dhershman/pathit"
+  },
+  "homepage": "http://echotechstudio.com",
+  "author": "Dustin Hershman <dustinh17@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "rimraf": "^2.5.4"
+  }
 }
