@@ -58,6 +58,7 @@ describe('Handling multiple paths in an array', function() {
 				});
 			}).catch(function(err) {
 				console.log(err);
+				done();
 			});
 	});
 });
