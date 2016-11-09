@@ -2,6 +2,17 @@
 Takes a string path and builds files that do not exist along that path.
 
 ## How To
+
+Install pathit with npm
+```
+npm i pathit
+```
+
+Run pathit tests using npm test
+```
+npm test
+```
+
 To use pathit simply require it and use it as a function
 
 ```js
