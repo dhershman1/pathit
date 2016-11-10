@@ -1,5 +1,3 @@
-[![build-status](https://pipelines-badges-service.useast.staging.atlassian.io/badge/atlassian/confluence-web-components.svg)](https://bitbucket.org/dhershman/pathit/addon/pipelines/home)
-
 ## Info
 Takes an array of strings and builds files that do not exist along those paths.
 
