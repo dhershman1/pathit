@@ -1,7 +1,7 @@
 [![build-status](https://pipelines-badges-service.useast.staging.atlassian.io/badge/atlassian/confluence-web-components.svg)](https://bitbucket.org/atlassian/pathit/addon/pipelines/home)
 
 ## Info
-Takes a string path and builds files that do not exist along that path.
+Takes an array of strings and builds files that do not exist along those paths.
 
 ## How To
 
@@ -50,5 +50,3 @@ pathit(['my/path/system', 'path/to/wherever', 'path/3/wherever'])
 
 })
 ```
-
-Useful with a build system to easily create paths that do not exist yet for production files.
