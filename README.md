@@ -16,17 +16,19 @@ Make sure you either do an npm i inside pathit or install mocha and chai before 
 npm test
 ```
 
-To use pathit simply require it and use it as a function with an array of paths and a callback function.
+To use pathit simply require it and use it as a function with an array of paths.
+
+The function call will return a `promise` back.
 
 ```js
 const pathit = require('pathit');
-pathit(['my/path/system'], callback);
+pathit(['my/path/system']);
 ```
 
-it now supports multiple paths so you can easily create branching filesystems. 
+it now supports multiple paths so you can easily create branching filesystems.
 ```js
 const pathit = require('pathit');
-pathit(['my/path/system', 'path/to/wherever', 'path/3/wherever'], callback);
-``` 
+pathit(['my/path/system', 'path/to/wherever', 'path/3/wherever']);
+```
 
 Useful with a build system to easily create paths that do not exist yet for production files.
