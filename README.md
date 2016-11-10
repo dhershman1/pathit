@@ -18,17 +18,37 @@ npm test
 
 To use pathit simply require it and use it as a function with an array of paths.
 
-The function call will return a `promise` back.
+The function call will return a `promise` back. The promise if resolved won't return any arguments, but if a `reject` occurs then it will return an error argument to the `.catch()`
 
 ```js
 const pathit = require('pathit');
-pathit(['my/path/system']);
+pathit(['my/path/system']).then(handler).catch(err);
+
+//or
+
+pathit(['my/path/system'])
+.then(() => {
+	//do stuff
+})
+.catch(err => {
+	//do stuff
+});
 ```
 
 it now supports multiple paths so you can easily create branching filesystems.
 ```js
 const pathit = require('pathit');
-pathit(['my/path/system', 'path/to/wherever', 'path/3/wherever']);
+pathit(['my/path/system', 'path/to/wherever', 'path/3/wherever']).then(handler).catch(err);
+
+//or
+
+pathit(['my/path/system', 'path/to/wherever', 'path/3/wherever'])
+.then(() => {
+
+})
+.catch(err => {
+
+})
 ```
 
 Useful with a build system to easily create paths that do not exist yet for production files.
