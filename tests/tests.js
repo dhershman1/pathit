@@ -51,9 +51,9 @@ describe('Handling multiple paths in an array', function() {
 	it('Should create multiple paths', function(done) {
 		pathit(['./tests/multi_path_test', './tests/multi_path_test/path_1', './tests/multi_path_test/path_2'])
 			.then(function() {
-				fs.readdir('./tests/testpath', (err, files) => {
+				fs.readdir('./tests/multi_path_test', (err, files) => {
 					if (err) done(err);
-					expect(files).to.be.ok;
+					expect(files.length).to.be.equal(2);
 					done();
 				});
 			}).catch(function(err) {
