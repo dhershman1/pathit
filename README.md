@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dhershman1/pathit.svg?branch=master)](https://travis-ci.org/dhershman1/pathit)
+
 ## Info
 Takes an array of strings and builds files that do not exist along those paths.
 
